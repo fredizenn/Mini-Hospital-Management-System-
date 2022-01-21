@@ -3,7 +3,7 @@ import "./sidebar.css"
 import { LineStyle, Timeline, TrendingUp, AttachMoney, ShoppingBag, Group,
          ManageAccounts, Assessment, Mail, Feedback, Forum, Healing, MedicalServicesIcon, MedicalServices } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
-export default function sidebar() {
+export default function SideBar() {
     return (
         <div className='sidebar'>
            <div className='sidebarWrapper'>
