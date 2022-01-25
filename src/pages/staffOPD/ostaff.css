@@ -18,3 +18,15 @@
     color: red;
     cursor: pointer;
 }
+
+.listHeading {
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subHeading {
+    color: gray;
+    font-size: 15px;
+}

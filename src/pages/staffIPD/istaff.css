@@ -1,3 +1,32 @@
 .staffList {
     flex: 4;
+    padding: 20px;
+}
+
+
+.istaffListEdit {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.istaffListDelete {
+    color: red;
+    cursor: pointer;
+}
+
+.listHeading {
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subHeading {
+    color: gray;
+    font-size: 15px;
 }
