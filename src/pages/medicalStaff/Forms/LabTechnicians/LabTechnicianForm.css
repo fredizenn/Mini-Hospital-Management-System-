@@ -1,0 +1,43 @@
+.newLabTechnician {
+    flex: 4;
+    flex-direction: column;
+}
+
+/* .newDoctorForm {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.newLabTechTitle {
+    margin-left: 10px;
+}
+
+
+.newDoctorItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.newLabTechForm>label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600px;
+    color: gray;
+}
+
+
+
+ .newLabTechnicianButton {
+    margin-left: 4px;
+   
+} 
+
+.button-section {
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+}
+

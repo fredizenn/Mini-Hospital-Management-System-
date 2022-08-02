@@ -1,10 +1,10 @@
-.staffList {
+.patientList {
     flex: 4;
     padding: 20px;
 }
 
 
-.istaffListEdit {
+.patientListEdit {
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -14,9 +14,19 @@
     margin-right: 10px;
 }
 
-.istaffListDelete {
+.patientDelete {
     color: red;
     cursor: pointer;
+}
+
+.ostaffListEditRed{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #d60b0b;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 .listHeading {
@@ -29,4 +39,14 @@
 .subHeading {
     color: gray;
     font-size: 15px;
+}
+
+.button-right {
+    float: right;
+}
+
+.buttons-container {
+    display: inline-block;
+    padding-bottom: 5px;
+    flex: 1;
 }

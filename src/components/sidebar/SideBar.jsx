@@ -1,8 +1,9 @@
 import React from 'react'
 import "./sidebar.css"
-import { LineStyle, Timeline, TrendingUp, AttachMoney, ShoppingBag, Group,
-         ManageAccounts, Assessment, Mail, Feedback, Forum, Healing, MedicalServicesIcon, MedicalServices } from '@mui/icons-material'
-import { Link } from 'react-router-dom'
+import { Home, Timeline, Medication, 
+         ManageAccounts, Assessment, Mail, Feedback, Forum, Healing, MedicalServicesIcon, MedicalServices,
+           Bookmark, Biotech } from '@mui/icons-material'
+import { NavLink } from 'react-router-dom'
 export default function SideBar() {
     return (
         <div className='sidebar'>
@@ -10,102 +11,87 @@ export default function SideBar() {
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Quick Menu</h3>
                    <ul className='sidebarList'>
-                       <Link to="/" className='link'>
-                       <li className='sidebarListItem active'>
-                            <LineStyle className='sidebarIcon' />
+                       <NavLink to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}>
+                       <li className='sidebarListItem'>
+                            <Home className='sidebarIcon' />
                             Home
                        </li>
-                       </Link>
+                       </NavLink>
+                      <NavLink to="/patients" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
-                            <Timeline className='sidebarIcon' />
-                            Bills
+                            <Healing className='sidebarIcon' />
+                            All Patients
                        </li>
+                       </NavLink>
+                       <NavLink to="/testRequest" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
-                            <TrendingUp className='sidebarIcon' />
-                            Sales
+                            <Biotech className='sidebarIcon' />
+                            Laboratory
                        </li>
-                       <Link to="/users" className='link'>
+                       </NavLink>
+                       {/* <NavLink to="/appointments" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
-                            <Group className='sidebarIcon' />
-                            Users
+                            <Bookmark className='sidebarIcon' />
+                            Appointments
                        </li>
-                       </Link>
+                       </NavLink> */}
                    </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">OPD Management</h3>
                                                                
                    <ul className='sidebarList'>
-                       <Link to="opdStaff" className='link'>
-                   <li className='sidebarListItem'>
-                            <MedicalServices className='sidebarIcon'/>
-                            Staff
-                       </li>
-                       </Link>
+                   <NavLink to="/outpatients" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
                             <Healing className='sidebarIcon'/>
-                            Patients
+                            Out-Patients
                        </li>
-                       <li className='sidebarListItem'>
-                            <AttachMoney className='sidebarIcon'/>
-                            Billing
-                       </li>
+                       </NavLink>
+                       
                    </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">IPD Management</h3>
                                                          
                    <ul className='sidebarList'>
-                   <Link to="ipdStaff" className='link'> 
-                   <li className='sidebarListItem'>
-                            <MedicalServices className='sidebarIcon'/>
-                            Staff
-                       </li>
-                       </Link> 
+                   <NavLink to="/inpatients" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
                             <Healing className='sidebarIcon'/>
-                            Patients
+                            In-Patients
                        </li>
-                       <li className='sidebarListItem'>
-                            <AttachMoney className='sidebarIcon'/>
-                            Billing
-                       </li>
+                       </NavLink>                       
                    </ul>
                </div>
                <div className="sidebarMenu">
                    <h3 className="sidebarTitle">Staff Management</h3>
                    <ul className='sidebarList'>
+                       <NavLink to="/medicalStaff" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
-                            <ManageAccounts className='sidebarIcon' />
+                       <ManageAccounts className='sidebarIcon' />
                             Manage
                        </li>
-                       <li className='sidebarListItem'>
-                            <Timeline className='sidebarIcon' />
-                            Analytics
-                       </li>
-                       <li className='sidebarListItem'>
-                            <Assessment className='sidebarIcon' />
-                            Reports
-                       </li>
+                       </NavLink>
+                            
+              
+                      
                    </ul>
                </div>
                <div className="sidebarMenu">
-                   <h3 className="sidebarTitle">Notifications</h3>
+                   <h3 className="sidebarTitle">Pharmacy</h3>
                    <ul className='sidebarList'>
+                       <NavLink to="/prescriptions" className={({ isActive }) => (isActive ? "link-active" : "link")}>
                        <li className='sidebarListItem'>
-                            <Mail className='sidebarIcon' />
-                            Mail
+                       <Medication className='sidebarIcon' />
+                            Dispensary
                        </li>
-                       <li className='sidebarListItem'>
-                            <Feedback className='sidebarIcon' />
-                            Feedback
-                       </li>
-                       <li className='sidebarListItem'>
-                            <Forum className='sidebarIcon' />
-                            Messages
-                       </li>
+                       </NavLink>
+                            
+              
+        
                    </ul>
                </div>
+              
+              
            </div>
         </div>
     )

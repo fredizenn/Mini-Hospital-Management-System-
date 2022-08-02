@@ -1,6 +1,6 @@
 import React from 'react';
 import "./newUser.css";
-
+import TextField from '@mui/material/TextField';
 export default function NewUser() {
     return (
         <div className='newUser'>
@@ -12,8 +12,7 @@ export default function NewUser() {
                </div>
                <div className="newUserItem">
                    <label>Full Name</label>
-                   <input type="text" placeholder='John Smith'/>
-               </div>
+                   <TextField id="filled-basic" label="Filled" variant="filled" />               </div>
                <div className="newUserItem">
                    <label>Email</label>
                    <input type="email" placeholder='johnsmith@gmail.com'/>

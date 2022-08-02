@@ -1,5 +1,5 @@
 .sidebar {
-    flex: 1;
+    flex: 0.8;
     height: calc(100vh - 50px);
     background-color: #f3f3f3;
     position: sticky;
@@ -9,6 +9,7 @@
 .sidebarWrapper {
     padding: 20px;
     color: #555;
+    position: fixed;
 }
 
 .sidebarMenu{
@@ -22,7 +23,7 @@
 
 .sidebarList {
     list-style: none;
-    padding: 5px;
+    padding: 2px;
 }
 
 .sidebarListItem {
@@ -33,9 +34,9 @@
     border-radius: 10px;
 }
 
-.sidebarListItem.active, .sidebarListItem:hover{
-    background-color: rgb(228, 228, 250);
-}
+
+
+
 
 .sidebarIcon {
     margin-right: 5px;

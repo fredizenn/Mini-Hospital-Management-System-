@@ -6,4 +6,24 @@
 .link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.link:hover {
+      background-color: rgb(228, 228, 250);
+      color: rgb(0, 0, 0);
+}
+
+.link-active{
+  background-color: rgb(228, 228, 250);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+
 }

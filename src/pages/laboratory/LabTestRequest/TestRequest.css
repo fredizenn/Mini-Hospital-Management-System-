@@ -1,0 +1,70 @@
+.staffList {
+    flex: 4;
+    padding: 20px;
+}
+
+
+.ostaffListEdit {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.ostaffListDelete {
+    color: red;
+    cursor: pointer;
+}
+
+.listHeading {
+    font-weight: 600;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.subHeading {
+    color: gray;
+    font-size: 15px;
+}
+
+.buttons-container {
+    display: inline-block;
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+.btn-item {
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.btn-link {
+    text-decoration: none;
+} 
+
+.btn-active {
+    background-color: #434343;
+    text-decoration: none;
+}
+
+.button-right {
+    flex: 4;
+    float: right;
+}

@@ -1,55 +1,55 @@
 export const userData = [
     {
       "name": "Jan",
-      "Active Users": 4000,
+      "Registered Patients": 0,
     },
     {
       "name": "Feb",
-      "Active Users": 3000,
+      "Registered Patients": 0,
       
     },
     {
       "name": "Mar",
-      "Active Users": 2000,
+      "Registered Patients": 0,
      
     },
     {
       "name": "Apr",
-      "Active Users": 2780,
+      "Registered Patients": 0,
      
     },
     {
       "name": "Jun",
-      "Active Users": 1890,
+      "Registered Patients": 8,
      
     },
     {
       "name": "Jul",
-      "Active Users": 2390,
+      "Registered Patients": 0,
     
     },
     {
       "name": "Aug",
-      "Active Users": 3490,
+      "Registered Patients": 0,
       
     },
     {
         "name": "Sep",
-        "Active Users": 5000,
+        "Registered Patients": 0,
         
       }, {
         "name": "Oct",
-        "Active Users": 3100,
+        "Registered Patients": 0,
         
       },
       {
         "name": "Nov",
-        "Active Users": 4233,
+        "Registered Patients": 0,
         
       },
       {
         "name": "Dec",
-        "Active Users": 4500,
+        "Registered Patients": 0,
         
       }
   ];

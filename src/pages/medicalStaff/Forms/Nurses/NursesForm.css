@@ -1,0 +1,43 @@
+.newNurse {
+    flex: 4;
+    flex-direction: column;
+}
+
+/* .newDoctorForm {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.newNurseTitle {
+    margin-left: 10px;
+}
+
+
+.newNurseItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.newNurseForm>label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600px;
+    color: gray;
+}
+
+
+
+ .newNurseButton {
+    margin-left: 4px;
+   
+} 
+
+.button-section {
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+}
+
